@@ -34,7 +34,7 @@ program
         const spinner = ora("正在下载模板")
         spinner.start()
         const { downloadUrl } = template[templateName]
-        // 这块要选择一个模板并且把项目名称设置为project-name
+        // 这块要选择一个模板并且把项目名称设置为projectNname
         download(downloadUrl, projectName, { clone: true }, (err)=>{
             if(err){
                 spinner.fail()
